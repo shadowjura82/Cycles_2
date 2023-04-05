@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -92,6 +93,15 @@ public class Main {
                 count = 0;
             }
             count++;
+        }
+    }
+
+    public static void task8() {
+        System.out.println("Задание 8");
+        short startYear = 1823;
+        short finishYear = 2123;
+        for (int i = startYear; i <= finishYear; i++) {
+            if (i % 79 == 0) System.out.println(i);
         }
     }
 }
