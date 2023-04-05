@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -66,6 +67,17 @@ public class Main {
             summ = summ + (summ * 0.07);
             monthCount++;
             if (monthCount % 6 == 0) System.out.println("Месяц " + monthCount + ", сумма вклада " + summ);
+        }
+    }
+
+    public static void task6() {
+        System.out.println("Задание 6");
+        float percents = 0.07f;
+        double summ = 15_000f;
+        int monthCount = 9 * 12; // 12 месяцев * на 9 лет
+        for (int i = 1; i <= monthCount; i++) {
+            summ = summ + (summ * 0.07);
+            if (i % 6 == 0) System.out.println("Месяц " + i + ", сумма вклада " + summ);
         }
     }
 }
