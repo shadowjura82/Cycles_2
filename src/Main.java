@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -78,6 +79,20 @@ public class Main {
         for (int i = 1; i <= monthCount; i++) {
             summ = summ + (summ * 0.07);
             if (i % 6 == 0) System.out.println("Месяц " + i + ", сумма вклада " + summ);
+        }
+    }
+
+    public static void task7() {
+        System.out.println("Задание 7");
+        int dateOfFriday = 4;
+        boolean flag = false;
+        byte count = 0;
+        for (int i = 1; i <= 31; i++) {
+            if (i == dateOfFriday || count == 7) {
+                System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет");
+                count = 0;
+            }
+            count++;
         }
     }
 }
