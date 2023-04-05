@@ -85,7 +85,6 @@ public class Main {
     public static void task7() {
         System.out.println("Задание 7");
         int dateOfFriday = 4;
-        boolean flag = false;
         byte count = 0;
         for (int i = 1; i <= 31; i++) {
             if (i == dateOfFriday || count == 7) {
