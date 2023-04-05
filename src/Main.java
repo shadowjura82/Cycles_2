@@ -57,7 +57,15 @@ public class Main {
         }
     }
 
-    public static void task5(){
-
+    public static void task5() {
+        System.out.println("Задание 5");
+        float percents = 0.07f;
+        double summ = 15_000f;
+        int monthCount = 0;
+        while (summ < 12_000_000f) {
+            summ = summ + (summ * 0.07);
+            monthCount++;
+            if (monthCount % 6 == 0) System.out.println("Месяц " + monthCount + ", сумма вклада " + summ);
+        }
     }
 }
