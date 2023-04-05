@@ -3,6 +3,8 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
+        task5();
     }
 
     public static void task1() {
@@ -41,5 +43,21 @@ public class Main {
             countPeople = countPeople + (countPeople / 1000 + 17) - (countPeople / 1000 - 8);
             System.out.println("Год " + i + ", численность населения составляет " + countPeople);
         }
+    }
+
+    public static void task4() {
+        System.out.println("Задание 4");
+        float percents = 0.07f;
+        double summ = 15_000f;
+        int monthCount = 0;
+        while (summ < 12_000_000f) {
+            summ = summ + (summ * 0.07);
+            monthCount++;
+            System.out.println("Месяц " + monthCount + ", сумма вклада " + summ);
+        }
+    }
+
+    public static void task5(){
+
     }
 }
