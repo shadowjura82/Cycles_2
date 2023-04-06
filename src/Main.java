@@ -43,7 +43,7 @@ public class Main {
         byte birthPeople = 17;
         byte deadPeople = 8;
         for (int i = 1; i <= 10; i++) {
-            countPeople = countPeople + (countPeople / 1000 + 17) - (countPeople / 1000 - 8);
+            countPeople = countPeople + (countPeople / 1000 * 17) - (countPeople / 1000 * 8);
             System.out.println("Год " + i + ", численность населения составляет " + countPeople);
         }
     }
