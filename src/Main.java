@@ -85,15 +85,9 @@ public class Main {
 
     public static void task7() {
         System.out.println("Задание 7");
-        int dateOfFriday = 4;
-        byte count = 0;
-        for (int i = 1; i <= 31; i++) {
-            if (i == dateOfFriday || count == 7) {
-                System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет");
-                count = 0;
-            }
-            count++;
-        }
+        int dateOfFriday = 1;
+        for (int i = dateOfFriday; i <= 31; i += 7)
+            System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет");
     }
 
     public static void task8() {
